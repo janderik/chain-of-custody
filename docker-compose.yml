@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  chain-of-custody:
+    build: .
+    container_name: chain-of-custody
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./custody_data:/app/custody_data
